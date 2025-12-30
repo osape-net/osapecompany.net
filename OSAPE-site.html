@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSAPE NEWS | Intelligence in Flow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --osape-navy: #0A192F; --osape-azure: #3B82F6; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: white; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-gradient { background: radial-gradient(circle at top right, #1e3a8a, #0A192F); }
+        .osape-wave { border-bottom: 3px solid var(--osape-azure); width: 50px; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <div class="w-full bg-blue-600/10 border-b border-blue-500/20 py-2 overflow-hidden whitespace-nowrap">
+        <div class="inline-block animate-marquee hover:pause px-4 text-xs font-mono uppercase tracking-widest text-blue-400">
+            OSAPE INDEX +1.24% • BTC $98,432 • AAPL -0.45% • OSAPE CLOUD NODES: ACTIVE • GLOBAL LATENCY: 14ms • 
+        </div>
+    </div>
+
+    <nav class="sticky top-0 z-50 glass px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-full border-2 border-blue-500 flex items-center justify-center font-bold text-xl hero-gradient">O</div>
+            <span class="text-2xl font-bold tracking-tighter uppercase">OSAPE <span class="text-blue-500">News</span></span>
+        </div>
+
+        <div class="hidden md:flex flex-1 max-w-xl mx-10 relative">
+            <input type="text" placeholder="Search the web with OSAPE..." 
+                   class="w-full bg-white/5 border border-white/10 rounded-full py-2 px-10 focus:outline-none focus:border-blue-500 transition">
+            <svg class="w-5 h-5 absolute left-3 top-2.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+
+        <div class="flex items-center space-x-6 text-sm font-medium text-slate-400">
+            <a href="#" class="hover:text-white">Technology</a>
+            <a href="#" class="hover:text-white">Market</a>
+            <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-bold hover:bg-blue-700">Login</button>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 p-6">
+        
+        <aside class="hidden lg:block space-y-6">
+            <div class="glass p-5 rounded-2xl">
+                <h3 class="text-blue-500 font-bold text-xs uppercase mb-4">Local Intel</h3>
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-2xl font-bold">24°C</p>
+                        <p class="text-slate-400 text-sm">Sunny in San Francisco</p>
+                    </div>
+                    <div class="text-4xl">☀️</div>
+                </div>
+            </div>
+            
+            <div class="space-y-2">
+                <h3 class="text-slate-500 font-bold text-xs uppercase px-2">Channels</h3>
+                <a href="#" class="block p-2 hover:bg-white/5 rounded-lg text-blue-400">● Top Stories</a>
+                <a href="#" class="block p-2 hover:bg-white/5 rounded-lg">● OSAPE Labs</a>
+                <a href="#" class="block p-2 hover:bg-white/5 rounded-lg">● Space & Defense</a>
+                <a href="#" class="block p-2 hover:bg-white/5 rounded-lg">● Sustainability</a>
+            </div>
+        </aside>
+
+        <main class="lg:col-span-2 space-y-8">
+            <div class="relative rounded-3xl overflow-hidden group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black to-transparent">
+                    <span class="bg-blue-600 text-[10px] font-bold px-2 py-1 rounded mb-4 inline-block">EXCLUSIVE</span>
+                    <h2 class="text-3xl font-bold mb-2 leading-tight">OSAPE AI Predicts Global Energy Shift by 2030</h2>
+                    <p class="text-slate-300 text-sm">Our neural networks have processed the last decade of climate data to find a surprising trend.</p>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="glass p-6 rounded-2xl space-y-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-blue-500 text-xs font-bold">FINANCE</span>
+                            <h3 class="text-xl font-bold mt-1">Global Markets Rally as OSAPE Pay Launches in Europe</h3>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1611974714658-75d4f11319c7?auto=format&fit=crop&w=150" class="w-20 h-20 rounded-xl object-cover">
+                    </div>
+                    <p class="text-slate-400 text-sm">Seamless cross-border transactions are now live for 200 million users...</p>
+                    
+                    <div class="pt-4 border-t border-white/5">
+                        <button onclick="showSummary(this)" class="flex items-center text-xs font-bold text-blue-400 hover:text-white transition">
+                            <span class="mr-2">✨</span> GENERATE OSAPE AI SUMMARY
+                        </button>
+                        <p class="summary-text hidden mt-3 text-sm italic text-slate-300 bg-blue-900/20 p-3 rounded-lg border-l-2 border-blue-500">
+                            OSAPE Pay's expansion into Europe is expected to reduce transaction fees by 30%, sparking a positive reaction in the fintech sector.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="space-y-6">
+            <div class="glass p-6 rounded-2xl">
+                <h3 class="font-bold mb-4 flex items-center">
+                    <span class="text-red-500 mr-2">●</span> Trending Now
+                </h3>
+                <ol class="space-y-4 text-sm">
+                    <li class="flex space-x-3">
+                        <span class="text-slate-500 font-bold italic">01</span>
+                        <p class="hover:text-blue-400 cursor-pointer">Why the OSAPE Browser is beating Chrome in speed tests.</p>
+                    </li>
+                    <li class="flex space-x-3">
+                        <span class="text-slate-500 font-bold italic">02</span>
+                        <p class="hover:text-blue-400 cursor-pointer">Future of Quantum Internet.</p>
+                    </li>
+                    <li class="flex space-x-3">
+                        <span class="text-slate-500 font-bold italic">03</span>
+                        <p class="hover:text-blue-400 cursor-pointer">Mars colony: OSAPE provides data links.</p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="hero-gradient p-6 rounded-2xl border border-blue-500/30">
+                <h3 class="font-bold mb-2">OSAPE Morning Brief</h3>
+                <p class="text-xs text-slate-300 mb-4">The most important news, delivered by AI to your inbox.</p>
+                <input type="email" placeholder="Email address" class="w-full bg-black/30 border border-white/10 rounded-lg py-2 px-3 text-sm mb-2 outline-none">
+                <button class="w-full bg-white text-black font-bold py-2 rounded-lg text-sm">Subscribe</button>
+            </div>
+        </aside>
+    </div>
+
+    <script>
+        function showSummary(btn) {
+            const text = btn.nextElementSibling;
+            text.classList.toggle('hidden');
+            btn.innerHTML = text.classList.contains('hidden') ? '✨ GENERATE OSAPE AI SUMMARY' : '✖ CLOSE SUMMARY';
+        }
+    </script>
+
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+    </style>
+</body>
+</html>
